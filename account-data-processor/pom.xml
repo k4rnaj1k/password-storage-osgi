@@ -21,7 +21,6 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <cxf.version>3.6.0</cxf.version>
     </properties>
 
     <build>
@@ -33,7 +32,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Embed-Dependency>*;scope=compile|runtime;inline=false;artifactId=*</Embed-Dependency>
+                        <Embed-Dependency>*;scope=runtime;inline=false;artifactId=*</Embed-Dependency>
                         <Embed-Transitive>false</Embed-Transitive>
                         <Bundle-SymbolicName>
                             ${pom.groupId}.${pom.artifactId}

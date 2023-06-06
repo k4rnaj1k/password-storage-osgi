@@ -8,10 +8,13 @@
 
     <feature name="password-storage-features" version="${pom.version}">
         <feature>cxf</feature>
+        <feature>camel-jms</feature>
+        <feature>camel-jackson</feature>
         <bundle>mvn:com.k4rnaj1k.ps/account-data-processor-api/${pom.version}</bundle>
         <bundle>mvn:com.k4rnaj1k.ps.impl/account-data-processor-impl/${pom.version}</bundle>
         <bundle>mvn:com.k4rnaj1k/password-encoder-api/${pom.version}</bundle>
         <bundle>mvn:com.k4rnaj1k/password-encoder-impl/${pom.version}</bundle>
+        <bundle>mvn:com.k4rnaj1k.gateway.impl/impl/${pom.version}</bundle>
     </feature>
 
 </features>
