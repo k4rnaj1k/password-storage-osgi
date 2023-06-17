@@ -23,6 +23,7 @@ public class UserDataRegisterRoute extends RouteBuilder {
 
         from("direct:register")
                 .bean("userDataService", "register")
+                //todo redirect a message to jms queue with username and pass
                 .log("request something");
 
         from("direct:register-get")

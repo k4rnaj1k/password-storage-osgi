@@ -14,5 +14,5 @@ public interface AccountStorageService {
     @Path("/hello")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    TestDTO hello();
+    TestDTO register();
 }

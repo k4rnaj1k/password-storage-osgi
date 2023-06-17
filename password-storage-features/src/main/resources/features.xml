@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <features
-        xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
+        xmlns="http://karaf.apache.org/xmlns/features/v1.3.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0"
         name="password-storage"
 >
 
     <feature name="password-storage-features" version="${pom.version}">
+        <feature>transaction</feature>
+        <feature>jndi</feature>
+        <feature>pax-jdbc-config</feature>
+        <feature>pax-jdbc-postgresql</feature>
+        <feature>pax-jdbc-pool-dbcp2</feature>
+        <feature>jdbc</feature>
+        <feature>pax-jdbc</feature>
+        <feature dependency="true">aries-blueprint</feature>
+        <feature version="[2,3)">jpa</feature>
+        <feature version="[5,6)">hibernate</feature>
         <feature>cxf</feature>
         <feature>camel-jms</feature>
         <feature>camel-jackson</feature>

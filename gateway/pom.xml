@@ -39,6 +39,7 @@
                         <Bundle-SymbolicName>
                             ${pom.groupId}.${pom.artifactId}
                         </Bundle-SymbolicName>
+                        <Meta-Persistence>META-INF/persistence.xml</Meta-Persistence>
 <!--                        <Bundle-Activator>com.k4rnaj1k.gateway.impl.CamelContextConfig</Bundle-Activator>-->
                         <Bundle-Name>${pom.name}</Bundle-Name>
                         <Bundle-Version>${pom.version}</Bundle-Version>
