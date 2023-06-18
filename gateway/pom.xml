@@ -44,7 +44,9 @@
                         <Bundle-Name>${pom.name}</Bundle-Name>
                         <Bundle-Version>${pom.version}</Bundle-Version>
                         <Export-Package>com.k4rnaj1k.gateway.*</Export-Package>
-                        <Import-Package>*</Import-Package>
+                        <Import-Package>
+                            javax.jms*;version="[2,3)",
+                            *</Import-Package>
                     </instructions>
                 </configuration>
             </plugin>

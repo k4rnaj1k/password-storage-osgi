@@ -13,13 +13,15 @@
         <feature>pax-jdbc-postgresql</feature>
         <feature>pax-jdbc-pool-dbcp2</feature>
         <feature>jdbc</feature>
+        <feature>activemq-client</feature>
         <feature>pax-jdbc</feature>
         <feature dependency="true">aries-blueprint</feature>
         <feature version="[2,3)">jpa</feature>
         <feature version="[5,6)">hibernate</feature>
         <feature>cxf</feature>
-        <feature>camel-jms</feature>
+        <feature>camel-activemq</feature>
         <feature>camel-jackson</feature>
+        <bundle>mvn:javax.jms/javax.jms-api/2.0.1</bundle>
         <bundle>mvn:com.k4rnaj1k.ps/account-data-processor-api/${pom.version}</bundle>
         <bundle>mvn:com.k4rnaj1k.ps.impl/account-data-processor-impl/${pom.version}</bundle>
         <bundle>mvn:com.k4rnaj1k/password-encoder-api/${pom.version}</bundle>

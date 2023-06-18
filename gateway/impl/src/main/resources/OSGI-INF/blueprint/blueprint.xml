@@ -13,6 +13,12 @@
     <jpa:enable />
     <tx:enable-annotations />
 
+    <bean id="activemq" class="org.apache.camel.component.activemq.ActiveMQComponent">
+        <property name="brokerURL" value="tcp://localhost:61616" />
+        <property name="username" value="karaf" />
+        <property name="password" value="karaf" />
+    </bean>
+
     <camelContext id="camel-1" xmlns="http://camel.apache.org/schema/blueprint">
         <routeBuilder ref="userRegisterRoute"/>
     </camelContext>
