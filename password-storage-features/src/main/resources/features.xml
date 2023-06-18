@@ -7,20 +7,19 @@
 >
 
     <feature name="password-storage-features" version="${pom.version}">
-        <feature>transaction</feature>
-        <feature>jndi</feature>
         <feature>pax-jdbc-config</feature>
         <feature>pax-jdbc-postgresql</feature>
         <feature>pax-jdbc-pool-dbcp2</feature>
-        <feature>jdbc</feature>
         <feature>activemq-client</feature>
-        <feature>pax-jdbc</feature>
         <feature dependency="true">aries-blueprint</feature>
         <feature version="[2,3)">jpa</feature>
         <feature version="[5,6)">hibernate</feature>
-        <feature>cxf</feature>
         <feature>camel-activemq</feature>
         <feature>camel-jackson</feature>
+        <feature>camel-jetty</feature>
+        <feature>cxf-jaxrs</feature>
+        <feature>cxf-jackson</feature>
+
         <bundle>mvn:javax.jms/javax.jms-api/2.0.1</bundle>
         <bundle>mvn:com.k4rnaj1k.ps/account-data-processor-api/${pom.version}</bundle>
         <bundle>mvn:com.k4rnaj1k.ps.impl/account-data-processor-impl/${pom.version}</bundle>
